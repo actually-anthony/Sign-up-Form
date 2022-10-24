@@ -1,5 +1,11 @@
+/* TODO: Add validation
+- style change for validation
+- password check for javascript
+- font styling for middle and top section
+*/
+
 :root {
-  --main-bg-color: #ffc7c7;
+  --main-bg-color: #f5c8cd;
   --secondary-color: #ffe2e2;
   --font-color: #f6f6f6;
   --accent-color: #8785a2;
