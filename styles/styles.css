@@ -1,17 +1,13 @@
+:root {
+  --main-bg-color: #ffc7c7;
+  --secondary-color: #ffe2e2;
+  --font-color: #f6f6f6;
+  --accent-color: #8785a2;
+  color: black;
+}
+
 html {
   height: 100%;
-}
-
-.left {
-  position: relative;
-  width: 33%;
-  height: 100%;
-  background-color: antiquewhite;
-}
-
-.right {
-  width: 67%;
-  background-color: navajowhite;
 }
 
 body {
@@ -21,8 +17,81 @@ body {
   height: 100%;
 }
 
+.left {
+  position: relative;
+  width: 33%;
+  height: 100%;
+}
+
+.right {
+  width: 67%;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  background-color: var(--main-bg-color);
+  height: 100%;
+}
+
+.middle {
+  background-color: var(--secondary-color);
+  height: 80%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bottom {
+  background-color: var(--main-bg-color);
+  height: 100%;
+  padding-top: 20px;
+  padding-left: 50px;
+}
+
 img {
   height: 100%;
+}
+
+form {
+  display: flex;
+  width: 60%;
+  padding-left: 50px;
+}
+
+input {
+  position: relative;
+  padding: 6px 10px;
+  margin: 8px 0;
+}
+
+.section {
+  display: flex;
+  /* position: relative; */
+  justify-content: center;
+  gap: 10%;
+}
+
+.input {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+}
+
+.input > label {
+  opacity: 0.3;
+  position: absolute;
+  left: 0px;
+  top: -10px;
+}
+
+.input > input {
+  flex-grow: 1;
 }
 
 .center {
@@ -36,7 +105,23 @@ img {
   top: 100px;
   height: 100px;
   width: 100%;
-  background-color: antiquewhite;
+  background-color: var(--accent-color);
   justify-content: center;
   align-items: center;
+}
+
+button {
+  padding: 10px 30px;
+  border-color: white;
+  color: white;
+  background-color: #8785a2;
+  border-radius: 10px;
+  border-style: solid;
+}
+
+button:hover {
+  background-color: white;
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+  transition-duration: 0.4s;
 }
