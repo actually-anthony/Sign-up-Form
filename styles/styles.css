@@ -23,6 +23,15 @@ body {
   height: 100%;
 }
 
+.banner {
+  display: flex;
+  color: white;
+  font-size: 4rem;
+  padding: 15px 0;
+  align-items: center;
+  gap: 1vw;
+}
+
 .right {
   width: 67%;
   display: flex;
@@ -68,6 +77,10 @@ input {
   position: relative;
   padding: 6px 10px;
   margin: 8px 0;
+  border-style: solid;
+  border-color: var(--main-bg-color);
+  border-radius: 4px;
+  opacity: 0.8;
 }
 
 .section {
@@ -81,6 +94,13 @@ input {
   position: relative;
   display: flex;
   flex-grow: 1;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  border-style: solid;
+  border-radius: 4px;
 }
 
 .input > label {
